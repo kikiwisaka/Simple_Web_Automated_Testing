@@ -1,0 +1,148 @@
+{
+  "cmc": {
+    "bbm_logo": {
+      "by": "id",
+      "locator": "bbmLogo"
+    },
+    "email_address": {
+      "by": "id",
+      "locator": "formId:email"
+    },
+    "password": {
+      "by": "id",
+      "locator": "formId:password"
+    },
+    "sign_in_button": {
+      "by": "id",
+      "locator": "formId:logincommandLink"
+    },
+    "create_new_channel": {
+      "by": "id",
+      "locator": "create-channel-button"
+    },
+    "channel_dar": {
+      "by": "xpath",
+      "locator": "//span[text()='Dar']"
+    },
+    "dar_details_page": {
+      "by": "xpath",
+      "locator": "//span[@id='channel-name-value' and text()='Dar']"
+    },
+    "chat_bot_icon": {
+      "by": "xpath",
+      "locator": "//span[text()='Chatbot']"
+    },
+    "chat_bot_settings": {
+      "by": "xpath",
+      "locator": "//span[@class='chatbotSettingsText right']"
+    },
+    "chat_bot_broadcast_icon": {
+      "by": "xpath",
+      "locator": "//li[@class='menuRegularPost current']"
+    },
+    "broadcast_title": {
+      "by": "id",
+      "locator": "broadcastTitle"
+    },
+    "broadcast_message": {
+      "by": "id",
+      "locator": "broadcastMessage"
+    },
+    "broadcast_button_label": {
+      "by": "id",
+      "locator": "broadcastButtonLabel"
+    },
+    "broadcast_button_url": {
+      "by": "id",
+      "locator": "broadcastButtonUrl"
+    },
+    "broadcast_preview_button": {
+      "by": "xpath",
+      "locator": "//a[@id='preview-button']//span"
+    },
+    "broadcast_button": {
+      "by": "xpath",
+      "locator": "//a[@id='broadcast-button']//span"
+    },
+    "broadcast_sent": {
+      "by": "xpath",
+      "locator": "//span[text()='Broadcast Sent']"
+    },
+    "video_broadcast": {
+      "by": "xpath",
+      "locator": "//span[text()='Video Broadcast']"
+    },
+    "video_link": {
+      "by": "id",
+      "locator": "postBroadcast-videolink-field-value"
+    },
+    "fetch_button": {
+      "by": "xpath",
+      "locator": "//span[text()='Fetch']"
+    },
+    "video_preview_button": {
+      "by": "xpath",
+      "locator": "//a[@id='videoPreview-button']//span"
+    },
+    "video_broadcast_button": {
+      "by": "xpath",
+      "locator": "//a[@id='videoBroadcast-button']//span"
+    },
+    "tab_posts": {
+      "by": "id",
+      "locator": "post"
+    },
+    "regular_post_title": {
+      "by": "name",
+      "locator": "post-title"
+    },
+    "regular_post_message": {
+      "by": "name",
+      "locator": "post-content"
+    },
+    "regular_post_button": {
+      "by": "xpath",
+      "locator": "//span[@class='hcell right link btn button' and text()='Post']"
+    },
+    "buy_now_caption": {
+      "by": "name",
+      "locator": "post-buyNow"
+    },
+    "link_caption": {
+      "by": "name",
+      "locator": "post-link"
+    },
+    "buy_now_post_button": {
+      "by": "xpath",
+      "locator": "//span[@class='hcell right link btn button' and text()='Post']/parent::a[@id='add-post-button-buyNow']"
+    },
+    "buy_now_tab": {
+      "by": "xpath",
+      "locator": "//li[@data-tab='buyNowBloc']"
+    },
+    "post_video_tab": {
+      "by": "xpath",
+      "locator": "//li[@data-tab='videoBloc']"
+    },
+    "post_video_link": {
+      "by": "name",
+      "locator": "post-videolink"
+    },
+    "post_video_fetch": {
+      "by": "xpath",
+      "locator": "//span[@class='hcell right link btn buttonFletch']"
+    },
+    "post_video_thumbnail": {
+      "by": "id",
+      "locator": "VideoImageDisplay"
+    },
+    "post_video_post_button": {
+      "by": "xpath",
+      "locator": "//span[@class='hcell right link btn button' and text()='Post']/parent::a[@id='add-post-button-video']"
+    },
+    "past_last_bcast": {
+      "by": "xpath",
+      "locator": "//div[@class='postTitle' and text()='{0}']"
+    }
+  }
+}

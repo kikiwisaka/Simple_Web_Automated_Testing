@@ -1,0 +1,26 @@
+[32m[I][39m [32m[Element bbmLogo Found][39m [32m[190315 14:53:09][39m
+[32m[I][39m [32m[Element formId:email Found][39m [32m[190315 14:53:10][39m
+[32m[I][39m [32m[Element formId:password Found][39m [32m[190315 14:53:10][39m
+[32m[I][39m [32m[Sending text Passw0rdto the formId:password][39m [32m[190315 14:53:12][39m
+[32m[I][39m [32m[Click Element formId:logincommandLink][39m [32m[190315 14:53:13][39m
+[32m[I][39m [32m[Element create-channel-button Found][39m [32m[190315 14:53:16][39m
+[32m[I][39m [32m[Element create-channel-button Found][39m [32m[190315 14:53:16][39m
+[32m[I][39m [32m[Click Element //span[text()='Dar']][39m [32m[190315 14:53:17][39m
+[32m[I][39m [32m[Element //span[@id='channel-name-value' and text()='Dar'] Found][39m [32m[190315 14:53:17][39m
+[32m[I][39m [32m[Element //span[text()='Chatbot'] Found][39m [32m[190315 14:53:17][39m
+[32m[I][39m [32m[Click Element //span[text()='Chatbot']][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Element //span[@class='chatbotSettingsText right'] Found][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Element //li[@class='menuRegularPost current'] Found][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Click Element //li[@class='menuRegularPost current']][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Element broadcastTitle Found][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Element broadcastTitle Found][39m [32m[190315 14:53:18][39m
+[32m[I][39m [32m[Sending text Chat Broadcastto the broadcastTitle][39m [32m[190315 14:53:20][39m
+[32m[I][39m [32m[Element broadcastMessage Found][39m [32m[190315 14:53:20][39m
+[32m[I][39m [32m[Sending text Chat Broadcast at 15/03/2019 14:53:20 - Partner Monitoringto the broadcastMessage][39m [32m[190315 14:53:22][39m
+[32m[I][39m [32m[Element broadcastButtonLabel Found][39m [32m[190315 14:53:23][39m
+[32m[I][39m [32m[Sending text Broadcast Linkto the broadcastButtonLabel][39m [32m[190315 14:53:25][39m
+[32m[I][39m [32m[Element broadcastButtonUrl Found][39m [32m[190315 14:53:25][39m
+[32m[I][39m [32m[Sending text https://www.google.comto the broadcastButtonUrl][39m [32m[190315 14:53:27][39m
+[32m[I][39m [32m[Click Element //a[@id='preview-button']//span][39m [32m[190315 14:53:28][39m
+[32m[I][39m [32m[Click Element //a[@id='broadcast-button']//span][39m [32m[190315 14:53:28][39m
+[32m[I][39m [32m[Element //span[text()='Broadcast Sent'] Found][39m [32m[190315 14:53:29][39m

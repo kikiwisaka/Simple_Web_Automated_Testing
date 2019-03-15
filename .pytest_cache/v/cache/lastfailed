@@ -1,0 +1,4 @@
+{
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect": true,
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_chat_bot_broadcast": true
+}

@@ -1,0 +1,8 @@
+{
+  "configuration": {
+    "chromeDriver": "/usr/local/bin/chromedriver",
+    "cmc_url": "https://caechannels.bbmessaging.com/bbmchannels-web-portal/main#/channels",
+    "cmc_email_address": "qebbm_kiki@mailinator.com",
+    "cmc_password": "Passw0rd"
+  }
+}

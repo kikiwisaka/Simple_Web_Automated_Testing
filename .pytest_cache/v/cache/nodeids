@@ -1,0 +1,7 @@
+[
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_chat_bot_broadcast",
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_chat_bot_video_broadcast",
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_regular_post",
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_buy_now_post",
+  "Web/tests/test_bbm_cmc.py::TestBBMConnect::()::test_video_post"
+]

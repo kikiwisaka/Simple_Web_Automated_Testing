@@ -1,0 +1,176 @@
+{
+  "services": [
+    {
+      "name": "BBMConnect",
+      "url": "https://bbm-int-solutions.firebaseapp.com/#/auth",
+      "environment": "BBMConnect",
+      "features": [
+        "landing",
+        "functions"
+      ],
+      "landing": {
+        "locator": "//span[contains(.,'Home')]",
+        "by": "xpath"
+      },
+      "functions": [
+        {
+          "Create Channel": {
+            "steps": [
+              {
+                "locator": "//i[contains(.,'menu')]",
+                "by": "xpath",
+                "action": "wait"
+              },
+              {
+                "locator": "//div[@class='q-item-main q-item-section']//div[contains(.,'Connectors')]",
+                "by": "xpath",
+                "action": "click"
+              },
+              {
+                "locator": "//button[@class='q-btn inline relative-position q-btn-item non-selectable fixed q-btn-round q-focusable q-hoverable bg-secondary text-white']",
+                "by": "xpath",
+                "action": "wait"
+              },
+              {
+                "locator": "//button[@class='q-btn inline relative-position q-btn-item non-selectable fixed q-btn-round q-focusable q-hoverable bg-secondary text-white']",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "//span[contains(.,'Create')]",
+                "by": "xpath",
+                "action": "wait"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[1]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[1]",
+                "by": "xpath",
+                "action": "input",
+                "text": "Test\n"
+              },
+              {
+                "locator": "//div[contains(.,'Description')and @class='q-if-label-spacer']",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "//textarea[@class='col q-input-target q-input-area']",
+                "by": "xpath",
+                "action": "input",
+                "text": "Description\n"
+              },
+              {
+                "locator": "//i[contains(.,'arrow_drop_down')]",
+                "by": "xpath",
+                "action": "click"
+              },
+              {
+                "locator": "//div[contains(.,'ChatDesktop') and @class='q-item-label']",
+                "by": "xpath",
+                "action": "wait"
+              },
+              {
+                "locator": "//div[contains(.,'ChatDesktop') and @class='q-item-label']",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[2]",
+                "by": "xpath",
+                "action": "wait"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[2]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[2]",
+                "by": "xpath",
+                "action": "input",
+                "text": "1234567\n"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[3]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[3]",
+                "by": "xpath",
+                "action": "input",
+                "text": "C1234556\n"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[4]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[4]",
+                "by": "xpath",
+                "action": "input",
+                "text": "DD098676"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[5]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[5]",
+                "by": "xpath",
+                "action": "input",
+                "text": "Bot1\n"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[6]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[6]",
+                "by": "xpath",
+                "action": "input",
+                "text": "1234567890"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[7]",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "locator": "(//input[@class='col q-input-target q-no-input-spinner ellipsis'])[7]",
+                "by": "xpath",
+                "action": "input",
+                "text": "1234567890"
+              },
+              {
+                "locator": "//div[contains(.,'Create') and @class='q-btn-inner row col items-center justify-center']",
+                "by": "xpath",
+                "action": "click_javascript"
+              },
+              {
+                "_comments": "Verifying whether connector is created successfully ",
+                "locator": "//div[@class='q-item-main q-item-section']//div[contains(.,'Connectors')]",
+                "by": "xpath",
+                "action": "click"
+              },
+              {
+                "_comments": "Verifying whether connector is created successfully ",
+                "locator": "//div[contains(.,'C123456') and @class='q-item-sublabel']",
+                "by": "xpath",
+                "action": "wait",
+                "validator_element": "True"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
