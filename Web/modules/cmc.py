@@ -20,6 +20,7 @@ class bbm_cmc(object):
         self.random_string = helper.random_id(5)
 
     def login(self):
+        custom_logger.warning("{0}]".format("login"))
         self.screen.wait_until_element_visible(self.object["bbm_logo"]["by"], self.object["bbm_logo"]["locator"])
         self.screen.find_element_and_input_javascript(self.object["email_address"]["by"],
                                                       self.object["email_address"]["locator"], 5,
@@ -30,10 +31,13 @@ class bbm_cmc(object):
                                      self.object["sign_in_button"]["locator"]):
             if self.screen.wait_until_element_visible(self.object["create_new_channel"]["by"],
                                                       self.object["create_new_channel"]["locator"], 15):
+                custom_logger.debug("Test case {0} passed]".format("login"))
                 assert True, "User is able to login successfully"
             else:
+                custom_logger.warning("{0}]".format("Home page after sign in is not displayed"))
                 assert False, "Home page after sign in is not displayed"
         else:
+            custom_logger.error("Test case {0} failed]".format("login"))
             assert False, "Click on Sign button is failed"
 
     def logout(self):
@@ -73,22 +77,27 @@ class bbm_cmc(object):
                 assert False
 
     def navigate_to_channel_detail_page(self):
+        custom_logger.warning("{0}]".format("navigate_to_channel_detail_page"))
         try:
             self.screen.wait_until_element_visible(self.object["create_new_channel"]["by"]
                                                    , self.object["create_new_channel"]["locator"])
-            if self.screen.click_element(self.object["channel_dar"]["by"],
-                                         self.object["channel_dar"]["locator"], 5):
-                if self.screen.wait_until_element_visible(self.object["dar_details_page"]["by"],
-                                                          self.object["dar_details_page"]["locator"]):
+            if self.screen.click_element(self.object["channel_selambe"]["by"],
+                                         self.object["channel_selambe"]["locator"], 5):
+                if self.screen.wait_until_element_visible(self.object["selambe_details_page"]["by"],
+                                                          self.object["selambe_details_page"]["locator"]):
                     assert True
                 else:
-                    assert False, "Dar channel details page is not displayed"
+                    custom_logger.error("{0}]".format("Selambe channel details page is not displayed"))
+                    assert False, "Selambe channel details page is not displayed"
             else:
-                assert False, "Click Dar channel is failed "
+                custom_logger.error("{0}]".format("Click Selambe channel is failed"))
+                assert False, "Click Selambe channel is failed "
         except AssertionError as e:
+            custom_logger.error("{0} failed]".format("navigate_to_channel_detail_page"))
             raise e
 
     def navigate_to_chat_bot(self):
+        custom_logger.warning("{0}]".format("navigate_to_chat_bot"))
         try:
             self.screen.wait_until_element_visible(self.object["chat_bot_icon"]["by"]
                                                    , self.object["chat_bot_icon"]["locator"])
@@ -98,10 +107,13 @@ class bbm_cmc(object):
                                                           self.object["chat_bot_settings"]["locator"]):
                     assert True
                 else:
+                    custom_logger.error("{0} failed]".format("Chat Bot tab is displayed"))
                     assert False, "Chat Bot tab is displayed"
             else:
+                custom_logger.error("{0} failed]".format("Click Chat Bot tab is failed"))
                 assert False, "Click Chat Bot tab is failed "
         except AssertionError as e:
+            custom_logger.error("{0} failed]".format("navigate_to_chat_bot"))
             raise e
 
     def send_chat_bot_video_broadcast(self):
@@ -141,7 +153,7 @@ class bbm_cmc(object):
             raise e
 
     def send_chat_bot_broadcast(self):
-
+        custom_logger.warning("{0}]".format("send_chat_bot_broadcast"))
         try:
             self.screen.wait_until_element_visible(self.object["chat_bot_broadcast_icon"]["by"]
                                                    , self.object["chat_bot_broadcast_icon"]["locator"])

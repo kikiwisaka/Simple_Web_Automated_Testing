@@ -20,13 +20,13 @@
       "by": "id",
       "locator": "create-channel-button"
     },
-    "channel_dar": {
+    "channel_selambe": {
       "by": "xpath",
-      "locator": "//span[text()='Dar']"
+      "locator": "//span[text()='Selambe']"
     },
-    "dar_details_page": {
+    "selambe_details_page": {
       "by": "xpath",
-      "locator": "//span[@id='channel-name-value' and text()='Dar']"
+      "locator": "//span[@id='channel-name-value' and text()='Selambe']"
     },
     "chat_bot_icon": {
       "by": "xpath",

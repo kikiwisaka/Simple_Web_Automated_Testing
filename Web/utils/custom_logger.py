@@ -10,7 +10,6 @@ class LoggerHelper():
     @staticmethod
     def delete_existing_report():
         pass
-        #json_logger = '/var/log/json_logger.log'
         json_logger = 'tmp'
         try:
             # os.remove(json_logger)
@@ -21,8 +20,6 @@ class LoggerHelper():
     @staticmethod
     def json_logger():
         json_format = LoggerHelper.json_formatter()
-        #logger1 = logzero.setup_logger(name="json_log", logfile="/var/log/json_logger.log", formatter=LoggerHelper.simple_formatter())
-        # return logger1
         logger1 = logzero.setup_logger(name="json_log", logfile="tmp.log", formatter=LoggerHelper.simple_formatter())
         return logger1
 
